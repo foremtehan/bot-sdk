@@ -2,6 +2,8 @@
 
 namespace Telegram\Bot\Laravel\Facades;
 
+use Telegram\Bot\Objects\Update;
+use Telegram\Bot\Objects\Message;
 use Illuminate\Support\Facades\Facade;
 use Telegram\Bot\BotsManager;
 
@@ -12,6 +14,10 @@ use Telegram\Bot\BotsManager;
  * @method static \Telegram\Bot\Api bot(string|null $name)
  * @method static \Telegram\Bot\Api reconnect(string|null $name)
  * @method static \Telegram\Bot\BotsManager disconnect(string|null $name)
+ * @method static string link(string $fileId)
+ * @method static string download(string $fileId)
+ * @method static Message toOwner(mixed $message, string $header = '', bool $preview = true)
+ * @method static Update[] getUpdates(array $params = [], $shouldEmitEvents = true)
  *
  * @mixin \Telegram\Bot\BotsManager
  */
