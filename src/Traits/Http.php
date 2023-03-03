@@ -33,7 +33,7 @@ trait Http
     protected $isAsyncRequest = false;
 
     /** @var int Timeout of the request in seconds. */
-    protected $timeOut = 60;
+    protected $timeOut = 600;
 
     /** @var int Connection timeout of the request in seconds. */
     protected $connectTimeOut = 10;
